@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #1c1b21;
+  --onBackground: #fefefe;
+  --primary: #25fe9b;
+  --secondary: #6c6b71;
+  --tertiary: #6c6b71;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--onBackground);
+  font-size: 16px;
+  font-family: "Fira Mono";
+}
+
+.title {
+  font-size: 46px;
+  font-weight: "600";
+}
+.sub_title {
+  font-weight: "600";
+  font-size: 36px;
+}

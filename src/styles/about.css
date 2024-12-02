@@ -1,0 +1,25 @@
+.about_btn {
+  border-radius: 4px;
+  background-color: #26252a;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 8px;
+}
+
+.about_btn:hover,
+.about_btn.active {
+  background-color: var(--primary);
+  color: #1c1b21;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resume .content {
+  margin-left: 50px;
+}
+
+.resume_card {
+  background-color: #26252a;
+  padding: 20px;
+  border-radius: 4px;
+}

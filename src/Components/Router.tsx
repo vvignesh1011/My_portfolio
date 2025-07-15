@@ -2,7 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "../Screens/Home";
-import AboutMe from "../Screens/AboutMe";
+import AboutMe from "../Screens/about/AboutMe";
 
 const router = createBrowserRouter([
   {

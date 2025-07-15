@@ -1,12 +1,12 @@
 import React from "react";
 
-type Props = {
+type Props<T extends string> = {
   active?: boolean;
-  title: string;
-  onClick?: (val: string) => void;
+  title: T;
+  onClick?: (val: T) => void;
 };
 
-function AboutBtn({ active, title, onClick }: Props) {
+function AboutBtn<T extends string>({ active, title, onClick }: Props<T>) {
   return (
     <div
       onClick={() => onClick && onClick(title)}

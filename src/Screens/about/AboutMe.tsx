@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import AboutBtn from "../Components/AboutBtn";
-import Experience from "../Components/Experience";
-import "../styles/about.css";
+import AboutBtn from "../../Components/AboutBtn";
+import "../../styles/about.css";
+import ExperienceSection from "./ExperienceSection";
+import EducationSection from "./EducationSection";
+import SkillSection from "./SkillSection";
 
 type Props = {};
 
 function AboutMe({}: Props) {
-  const [subMenu, setSubMenu] = useState("Experience");
+  const [subMenu, setSubMenu] = useState<"Experience" | "Education" | "Skills">(
+    "Experience"
+  );
+
+  const RenderSection = useCallback(() => {
+    if (subMenu == "Experience") return <ExperienceSection />;
+    if (subMenu == "Education") return <EducationSection />;
+    return <SkillSection />;
+  }, [subMenu]);
+
   return (
     <div className="flex resume">
       <div className="max-w-[260px]">
@@ -50,7 +61,7 @@ function AboutMe({}: Props) {
       </div>
 
       <div className="flex-1 content">
-        <Experience />
+        <RenderSection />
       </div>
     </div>
   );

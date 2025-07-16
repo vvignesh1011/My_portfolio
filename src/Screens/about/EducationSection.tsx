@@ -8,9 +8,9 @@ export default function EducationSection({}: Props) {
     <div>
       <p className="sub_title mb-4">Education</p>
       <EducationCard
-        duration="Nov 2022 - Present"
-        company="Looperex Technologies"
-        position="Full stack developer"
+        duration="2015 to 2019"
+        institute="M.I.E.T Engineering College"
+        title="Bachelor of Engineering"
       />
     </div>
   );

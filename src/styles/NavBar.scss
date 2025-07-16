@@ -6,7 +6,6 @@
 }
 
 .menu_item_container {
-  flex: 0.5;
   display: flex;
   align-items: center;
 }
@@ -39,5 +38,12 @@
   }
   li::after {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu_item_container {
+    flex-direction: column;
+    margin-left: unset;
   }
 }

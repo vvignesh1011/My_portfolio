@@ -30,7 +30,7 @@ function AboutMe({}: Props) {
               1000,
               "Handle entire project alone",
               1000,
-              "Working with both fontend and backend",
+              "Working with both frontend and backend",
               1000,
               "Develop Web and Mobile applications",
             ]}

@@ -30,27 +30,27 @@ export default function SkillSection({}: Props) {
     <div>
       <p className="sub_title mb-4">My Skills</p>
       <div className="grid gap-8 grid-cols-4 w-fit pb-6 scroll-auto">
-        <SkillCard icon={FaHtml5} />
-        <SkillCard icon={FaCss3} />
-        <SkillCard icon={FaJs} />
-        <SkillCard icon={TbBrandTypescript} />
+        <SkillCard icon={FaHtml5} title="HTML" />
+        <SkillCard icon={FaCss3} title="CSS" />
+        <SkillCard icon={FaJs} title="Java Script" />
+        <SkillCard icon={TbBrandTypescript} title="Type Script" />
 
-        <SkillCard icon={FaNodeJs} />
-        <SkillCard icon={SiExpress} />
-        <SkillCard icon={TbBrandMongodb} />
-        <SkillCard icon={FaReact} />
+        <SkillCard icon={FaNodeJs} title="Node Js" />
+        <SkillCard icon={SiExpress} title="Express Js" />
+        <SkillCard icon={TbBrandMongodb} title="Mongo DB" />
+        <SkillCard icon={FaReact} title="React" />
 
-        <SkillCard icon={TbBrandReactNative} />
-        <SkillCard icon={FaAngular} />
-        <SkillCard icon={TbBrandNextjs} />
-        <SkillCard icon={TbBrandRedux} />
-        <SkillCard icon={RiTailwindCssFill} />
-        <SkillCard icon={TbBrandDocker} />
-        <SkillCard icon={DiNginx} />
+        <SkillCard icon={TbBrandReactNative} title="React Native" />
+        <SkillCard icon={FaAngular} title="Angular" />
+        <SkillCard icon={TbBrandNextjs} title="Next Js" />
+        <SkillCard icon={TbBrandRedux} title="Redux" />
+        <SkillCard icon={RiTailwindCssFill} title="Tailwind" />
+        <SkillCard icon={TbBrandDocker} title="Docker" />
+        <SkillCard icon={DiNginx} title="Nginx" />
 
-        <SkillCard icon={FaGit} />
-        <SkillCard icon={FaJava} />
-        <SkillCard icon={FaPython} />
+        <SkillCard icon={FaGit} title="Git" />
+        <SkillCard icon={FaJava} title="Java" />
+        <SkillCard icon={FaPython} title="Python" />
       </div>
     </div>
   );

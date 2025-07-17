@@ -45,5 +45,15 @@
   .menu_item_container {
     flex-direction: column;
     margin-left: unset;
+    flex: 1;
+  }
+
+  .menu_item_container a {
+    width: 100%;
+  }
+
+  .menu_item_container li {
+    padding: 10px;
+    margin-left: unset;
   }
 }

@@ -17,9 +17,7 @@ function NavBar({}: Props) {
         <NavLink to={"/about"}>
           <li>About Me</li>
         </NavLink>
-        <NavLink to={"/skills"}>
-          <li>Skills</li>
-        </NavLink>
+
         <NavLink to={"/work"} end>
           <li>Work</li>
         </NavLink>

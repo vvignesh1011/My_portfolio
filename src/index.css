@@ -32,3 +32,10 @@ body {
   font-weight: "600";
   font-size: 36px;
 }
+input,
+textarea {
+  background-color: var(--background);
+  display: block;
+  padding: 8px 16px;
+  border-radius: 4px;
+}

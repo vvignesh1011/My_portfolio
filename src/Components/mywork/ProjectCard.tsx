@@ -9,6 +9,7 @@ type Props = {
   techStack: string;
   githubLink: string;
   liveLink?: string;
+  image?: string;
 };
 export type ProjectInfo = Props;
 
@@ -19,6 +20,7 @@ export default function ProjectCard({
   techStack,
   title,
   liveLink,
+  image,
 }: Props) {
   const viewGithub = () => githubLink && window.open(githubLink, "_blank");
   const viewLive = () => liveLink && window.open(liveLink, "_blank");
@@ -59,9 +61,12 @@ export default function ProjectCard({
       {/* right */}
       <div className="flex-1">
         <img
-          src="https://goodmockups.com/wp-content/uploads/2021/05/Free-Website-Presentation-Mockup-PSD.jpg"
+          src={
+            image ||
+            "https://goodmockups.com/wp-content/uploads/2021/05/Free-Website-Presentation-Mockup-PSD.jpg"
+          }
           alt=""
-          className="w-full h-full"
+          className="w-full h-full object-contain rounded-sm"
         />
       </div>
     </div>

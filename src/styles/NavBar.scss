@@ -42,10 +42,41 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar_container {
+    position: relative;
+  }
   .menu_item_container {
     flex-direction: column;
     margin-left: unset;
     flex: 1;
+    /* From https://css.glass */
+    background: rgb(64 27 77 / 20%);
+    box-shadow: 0 4px 30px #1c1c1c1a;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    bottom: 0;
+    z-index: 10;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+
+  #menu_toggler:checked ~ .menu_item_container {
+    left: 0;
+  }
+  #menu_open,
+  #menu_close {
+    display: none;
+  }
+  #menu_toggler:checked ~ .menu_icon #menu_close {
+    display: inline-block;
+  }
+
+  #menu_toggler:not(:checked) ~ .menu_icon #menu_open {
+    display: inline-block;
   }
 
   .menu_item_container a {

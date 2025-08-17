@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceCard from "../../Components/ExperienceCard";
 
 type Props = {};

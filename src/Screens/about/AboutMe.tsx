@@ -20,8 +20,8 @@ function AboutMe({}: Props) {
   }, [subMenu]);
 
   return (
-    <div className="flex resume">
-      <div className="max-w-[260px]">
+    <div className="flex resume flex-wrap">
+      <div className="md:max-w-[260px] w-full">
         <p className="sub_title">Why Hire Me?</p>
         <div>
           <TypeAnimation
@@ -60,7 +60,7 @@ function AboutMe({}: Props) {
         </div>
       </div>
 
-      <div className="flex-1 content">
+      <div className="flex-1 md:ml-[50px] mx-auto">
         <RenderSection />
       </div>
     </div>

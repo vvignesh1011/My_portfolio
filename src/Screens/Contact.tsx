@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Contact({}: Props) {
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       <ContactForm />
       <ContactInfo />
     </div>

@@ -92,9 +92,9 @@ function Home({}: Props) {
       <div className="mx-auto">
         <div className=" relative flex w-fit ml-auto">
           <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+            src="/profile.png"
             alt="profile_img"
-            className="w-[300px] xl:w-[400px] h-[300px] xl:h-[400px] self-center "
+            className="w-[300px] xl:w-[400px] h-[300px] xl:h-[400px] self-center object-cover object-top "
             style={{ borderRadius: "50%", padding: 10 }}
           />
           <motion.svg

@@ -25,7 +25,7 @@ export default function ProjectCard({
   const viewGithub = () => githubLink && window.open(githubLink, "_blank");
   const viewLive = () => liveLink && window.open(liveLink, "_blank");
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 flex-col md:flex-row">
       {/* left */}
       <div className="flex-1">
         <h1

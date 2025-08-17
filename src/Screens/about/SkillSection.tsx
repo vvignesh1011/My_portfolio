@@ -29,7 +29,7 @@ export default function SkillSection({}: Props) {
   return (
     <div>
       <p className="sub_title mb-4">My Skills</p>
-      <div className="grid gap-8 grid-cols-4 w-fit pb-6 scroll-auto">
+      <div className="grid gap-8 grid-cols-3 md:grid-cols-4 w-fit pb-6 scroll-auto">
         <SkillCard icon={FaHtml5} title="HTML" />
         <SkillCard icon={FaCss3} title="CSS" />
         <SkillCard icon={FaJs} title="Java Script" />

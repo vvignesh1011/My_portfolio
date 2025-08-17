@@ -8,7 +8,7 @@ type Props = {};
 
 export default function ContactInfo({}: Props) {
   return (
-    <div className=" p-16 flex flex-col gap-3 justify-center">
+    <div className=" py-16 md:px-16 flex flex-col gap-3 justify-center">
       <ContactInfoItem
         icon={FaPhoneAlt}
         title="Phone"
